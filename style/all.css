@@ -1,0 +1,150 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  padding: 2rem 0;
+  max-width: 296px;
+  width: 100%;
+  height: 100vh;
+  background: #EDF4EE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+nav .logo {
+  margin: 0 0 2rem 2rem;
+}
+
+nav ul a {
+  font-size: 1rem;
+  line-height: 24px;
+  padding-left: 2rem;
+  margin-bottom: 1.625rem;
+  font-weight: 1000;
+}
+
+nav ul a:hover {
+  border-left: 4px solid #2A8356;
+  padding-left: 1.75rem;
+  color: #2A8356;
+}
+
+nav ul a i {
+  position: relative;
+  top: 5px;
+  margin-right: 1rem;
+}
+
+nav .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2rem;
+  margin-top: auto;
+}
+
+nav .user-photo {
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+  position: relative;
+  top: 5px;
+}
+
+nav .user .name {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 1000;
+}
+
+nav .user .email {
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: #0000009A;
+}
+
+.all-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=all.css.map */
