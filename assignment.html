@@ -1,53 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assignment</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="/style/all.css">
 </head>
+
 <body>
-<div class="all-wrap">
-    <nav>
-        <div class="logo">
-            <a href="#">
-                <img src="/images/logo-ANSWER.png" alt="logo">
-            </a>
-        </div>
-        <ul>
-            <li><a href="#"><i class="material-icons">assessment</i>Dashboard</a></li>
-            <li><a href="#"><i class="material-icons">question_answer</i>Question</a></li>
-            <li><a href="#"><i class="material-icons">assignment</i>Assignment</a></li>
-            <li><a href="#"><i class="material-icons">video_library</i>Course</a></li>
-            <li><a href="#"><i class="material-icons">supervisor_account</i>Admin</a></li>
-            <li><a href="#"><i class="material-icons">settings</i>Settings</a></li>
-        </ul>
-        <div class="user">
-            <div class="user-photo">
-                <img src="/images/photo1.jpg" alt="user-photo">
+    <div class="all-wrap">
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="/images/logo-ANSWER.png" alt="logo">
+                </a>
             </div>
-            <div class="user-info">
-                <div class="name">Andy Chen</div>
-                <div class="email">andy0401@mail.com</div>
+            <ul>
+                <li><a href="#"><i class="material-icons">assessment</i>Dashboard</a></li>
+                <li><a href="#"><i class="material-icons">question_answer</i>Question</a></li>
+                <li><a href="#"><i class="material-icons">assignment</i>Assignment</a></li>
+                <li><a href="#"><i class="material-icons">video_library</i>Course</a></li>
+                <li><a href="#"><i class="material-icons">supervisor_account</i>Admin</a></li>
+                <li><a href="#"><i class="material-icons">settings</i>Settings</a></li>
+            </ul>
+            <div class="user">
+                <div class="user-photo">
+                    <img src="/images/photo1.jpg" alt="user-photo">
+                </div>
+                <div class="user-info">
+                    <div class="name">Andy Chen</div>
+                    <div class="email">andy0401@mail.com</div>
+                </div>
             </div>
-        </div>
-    </nav>   
-    <div class="assignment-wrapper">
-        <div class="assignment-header">
-            <div>
-                <h1>Assignment</h1>
-                <select name="" id="">
-                    <option value="All Courses">All Courses</option>
-                    <option value="All Courses">All Courses</option>
-                    <option value="All Courses">All Courses</option>
-                    <option value="All Courses">All Courses</option>
-                </select>
+        </nav>
+        <div class="assignment-wrapper">
+            <div class="assignment-header">
+                <div class="header-title">
+                    <h1>Assignment</h1>
+                    <select name="Courses" id="Courses" class="Courses">
+                        <option value="All Courses">All Courses</option>
+                        <option value="All Courses">All Courses</option>
+                        <option value="All Courses">All Courses</option>
+                        <option value="All Courses">All Courses</option>
+                    </select>
+                </div>
+                <div class="header-icon">
+                    <a href="#"><i class="material-icons">search</i></a>
+                    <a href="#"><i class="material-icons">notifications_active</i></a>
+                </div>
+            </div>
+
+            <div class="assignment-body">
+                <div class="assignment-list">
+                    <select name="course-sort" id="course-sort" class="course-sort">
+                        <option value="All">All(4)</option>
+                        <option value="All">All(4)</option>
+                        <option value="All">All(4)</option>
+                        <option value="All">All(4)</option>
+                        <option value="All">All(4)</option>
+                    </select>
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="comments">
+                    <p class="comment-total text-right">2 comments</p>
+                    <div class="card">
+                        <div class="card-header">
+                            <div>
+                                <p class="chapter">Chapter Assignment 2 / HTML&CSS</p>
+                                <p class="title">Please check this file for me, thanks!</p>
+                            </div>
+                            <div><i class="material-icons">more_vert</i></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="media">
+                                <img src="/images/photo2.jpg" class="mr-3" alt="photo">
+                                <div class="media-body">
+                                    <div class="mt-0">
+                                        <h5>Emily Wang</h5>
+                                        <p>10:38 AM (4 hours ago)</p>
+                                    </div>
+                                    <div class="comment-content">
+                                        <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the img ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                                        <button>HW-2-David.zip</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <img src="/images/photo1.jpg" class="mr-3" alt="photo">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Media heading</h5>
+                                    <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the img ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="switch-and-button">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

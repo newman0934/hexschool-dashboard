@@ -147,4 +147,92 @@ nav .user .email {
   display: -ms-flexbox;
   display: flex;
 }
+
+.assignment-wrapper {
+  padding: 2rem;
+  width: 100%;
+}
+
+.assignment-wrapper .assignment-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2.75rem;
+}
+
+.assignment-wrapper .assignment-header .header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.assignment-wrapper .assignment-header .header-title h1 {
+  font-size: 1.5rem;
+  line-height: 33px;
+  margin-right: 2.875rem;
+}
+
+.assignment-wrapper .assignment-header .header-title select {
+  font-size: 1rem;
+}
+
+.assignment-wrapper .assignment-header .header-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.assignment-wrapper .assignment-header .header-icon a {
+  margin-left: 1.625rem;
+}
+
+.assignment-wrapper .assignment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.assignment-wrapper .assignment-body .assignment-list {
+  width: 34.78%;
+}
+
+.assignment-wrapper .assignment-body .comments {
+  width: 63.47%;
+}
+
+.assignment-wrapper .assignment-body .comments .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: #EDF4EE;
+}
+
+.assignment-wrapper .assignment-body .comments .card-body .media {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #CDDDCD;
+}
+
+.assignment-wrapper .assignment-body .comments .card-body .media img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=all.css.map */

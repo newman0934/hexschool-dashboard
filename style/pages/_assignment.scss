@@ -1,3 +1,62 @@
-.all-wrap{
+.all-wrap {
+  display: flex;
+}
+
+.assignment-wrapper {
+  padding: 2rem;
+  width: 100%;
+  .assignment-header {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.75rem;
+    .header-title {
+      display: flex;
+      align-items: center;
+      h1 {
+        font-size: 1.5rem;
+        line-height: 33px;
+        margin-right: 2.875rem;
+      }
+      select {
+        font-size: 1rem;
+      }
+    }
+    .header-icon {
+      display: flex;
+      align-items: center;
+      a {
+        margin-left: 1.625rem;
+      }
+    }
+  }
+
+  .assignment-body {
+    display: flex;
+    justify-content: space-between;
+    .assignment-list {
+      width: 34.78%;
+    }
+
+    .comments {
+      width: 63.47%;
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.75rem 1rem;
+        background: $primary-color;
+      }
+      .card-body {
+        .media {
+          margin-bottom: 1rem;
+          border-bottom: 1px solid $border-color;
+          img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
 }
