@@ -67,10 +67,19 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: green;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+select {
+  border: none;
+  font-weight: 1000;
 }
 
 nav {
@@ -180,6 +189,7 @@ nav .user .email {
 
 .assignment-wrapper .assignment-header .header-title select {
   font-size: 1rem;
+  font-weight: 1000;
 }
 
 .assignment-wrapper .assignment-header .header-icon {
@@ -208,8 +218,66 @@ nav .user .email {
   width: 34.78%;
 }
 
+.assignment-wrapper .assignment-body .assignment-list select {
+  margin-bottom: 2px;
+}
+
+.assignment-wrapper .assignment-body .assignment-list .list-group-item {
+  padding: 0.75rem;
+  border: 1px solid #CDDDCD;
+}
+
+.assignment-wrapper .assignment-body .assignment-list .list-group-item:hover {
+  background: #EDF4EE;
+}
+
+.assignment-wrapper .assignment-body .assignment-list .list-group-item .chapter-and-create-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.assignment-wrapper .assignment-body .assignment-list .list-group-item .chapter-and-create-time .assignment-chapter {
+  font-size: 0.75rem;
+  line-height: 24px;
+}
+
+.assignment-wrapper .assignment-body .assignment-list .list-group-item .chapter-and-create-time .assignment-create-time {
+  font-size: 0.75rem;
+  line-height: 24px;
+}
+
+.assignment-wrapper .assignment-body .assignment-list .list-group-item .title-and-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.assignment-wrapper .assignment-body .assignment-list .list-group-item .title-and-name .assignment-title {
+  font-size: 0.75rem;
+  line-height: 24px;
+}
+
+.assignment-wrapper .assignment-body .assignment-list .list-group-item .title-and-name .assignment-name {
+  font-size: 0.75rem;
+  line-height: 24px;
+  color: #0000009A;
+}
+
 .assignment-wrapper .assignment-body .comments {
   width: 63.47%;
+}
+
+.assignment-wrapper .assignment-body .comments .comment-total {
+  font-size: 0.75rem;
+  line-height: 24px;
+  color: #707070;
 }
 
 .assignment-wrapper .assignment-body .comments .card-header {
@@ -223,6 +291,24 @@ nav .user .email {
   background: #EDF4EE;
 }
 
+.assignment-wrapper .assignment-body .comments .card-header .chapter {
+  font-size: 0.75rem;
+  line-height: 24px;
+}
+
+.assignment-wrapper .assignment-body .comments .card-header .title {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 1000;
+}
+
+.assignment-wrapper .assignment-body .comments .card-header i {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .assignment-wrapper .assignment-body .comments .card-body .media {
   margin-bottom: 1rem;
   border-bottom: 1px solid #CDDDCD;
@@ -234,5 +320,42 @@ nav .user .email {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.assignment-wrapper .assignment-body .comments .card-body .media .comment-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.assignment-wrapper .assignment-body .comments .card-body .media .comment-info .favorite-and-edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.assignment-wrapper .assignment-body .comments .card-body .media .comment-info .favorite-and-edit a {
+  margin-left: 1.5rem;
+}
+
+.assignment-wrapper .assignment-body .comments .switch-and-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.assignment-wrapper .assignment-body .comments .switch-and-button .switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=all.css.map */

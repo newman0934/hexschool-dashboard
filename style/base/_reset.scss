@@ -63,8 +63,17 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+	color: green;
+}
+
 img{
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+select{
+	border:none;
+	font-weight: 1000;
 }

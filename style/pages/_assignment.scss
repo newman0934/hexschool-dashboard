@@ -19,6 +19,7 @@
       }
       select {
         font-size: 1rem;
+        font-weight: 1000;
       }
     }
     .header-icon {
@@ -35,15 +36,61 @@
     justify-content: space-between;
     .assignment-list {
       width: 34.78%;
-    }
+      select{
+        margin-bottom: 2px;
+      }
+      .list-group-item{
+        padding:0.75rem;
+        border:1px solid $border-color;
+        &:hover{
+          background: $primary-color;
+        }
+        .chapter-and-create-time{
+          display: flex;
+          justify-content: space-between;
+          .assignment-chapter{
+            @include font-sm;
+          }
+          .assignment-create-time{
+            @include font-sm;
+          }
+        }
+        .title-and-name{
+          display: flex;
+          justify-content: space-between;
+          .assignment-title{
+            @include font-sm;
+          }
+          .assignment-name{
+            @include font-sm;
+            color: #0000009A;
+          }
+        }
 
+      }
+    }
     .comments {
       width: 63.47%;
+      .comment-total{
+        @include font-sm;
+        color: #707070;
+      }
       .card-header {
         display: flex;
         justify-content: space-between;
         padding: 0.75rem 1rem;
         background: $primary-color;
+        .chapter{
+          @include font-sm;
+        }
+        .title{
+          @include font-md;
+        }
+        i{
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
       .card-body {
         .media {
@@ -55,6 +102,24 @@
             border-radius: 50%;
             object-fit: cover;
           }
+          .comment-info{
+            display: flex;
+            justify-content: space-between;
+            .favorite-and-edit{
+              display: flex;
+              a{
+                margin-left: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+      .switch-and-button{
+        display: flex;
+        justify-content: space-between;
+        .switch{
+          display: flex;
+          align-items: center;
         }
       }
     }

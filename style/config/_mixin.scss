@@ -1,0 +1,10 @@
+@mixin font-sm{
+    font-size: $font-sm;
+    line-height: $line-height;
+}
+
+@mixin font-md{
+    font-size: $font-md;
+    line-height: $line-height;
+    font-weight: 1000;
+}
