@@ -1,0 +1,79 @@
+.all-wrap {
+  display: flex;
+}
+.admin-wrapper {
+  padding: 2rem;
+  width: 100%;
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.75rem;
+    .header-title {
+      display: flex;
+      align-items: center;
+      h1 {
+        font-size: 1.5rem;
+        line-height: 33px;
+        margin-right: 2.875rem;
+      }
+      a {
+        @include font-md;
+        font-weight: 1000;
+        i {
+          margin-right: 0.8rem;
+          vertical-align: bottom;
+          color: $hover-color;
+        }
+      }
+    }
+    .header-icon {
+      display: flex;
+      a {
+        margin-left: 1.625rem;
+      }
+    }
+  }
+  table {
+    margin-bottom: 2rem;
+    th {
+      border-top: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid #121212;
+      @include font-md;
+    }
+    tbody {
+      margin-bottom: 4rem;
+      tr {
+        &:hover {
+          background: $primary-color;
+        }
+        td {
+          border-top: none;
+          padding: 1rem 0;
+          border-bottom: 1px solid #cdddcd;
+          @include font-md;
+          font-weight: 600;
+        }
+      }
+    }
+    .table-icons {
+      display: flex;
+      justify-content: flex-end;
+      a:last-child {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+  .page-link {
+    padding: 5px 0 0 0;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border: 1px solid $hover-color;
+    color: #121212;
+    &:hover {
+      color: white;
+      background: $hover-color;
+    }
+  }
+}

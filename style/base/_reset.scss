@@ -64,7 +64,8 @@ a{
 }
 
 a:hover{
-	color: green;
+	color: $hover-color;
+	text-decoration: none;
 }
 
 img{

@@ -68,7 +68,8 @@ a {
 }
 
 a:hover {
-  color: green;
+  color: #2A8356;
+  text-decoration: none;
 }
 
 img {
@@ -86,7 +87,6 @@ nav {
   padding: 2rem 0;
   max-width: 296px;
   width: 100%;
-  height: 100vh;
   background: #EDF4EE;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,9 +110,9 @@ nav ul a {
 }
 
 nav ul a:hover {
-  border-left: 4px solid #2A8356;
+  border-left: 4px solid #2a8356;
   padding-left: 1.75rem;
-  color: #2A8356;
+  color: #2a8356;
 }
 
 nav ul a i {
@@ -148,7 +148,7 @@ nav .user .name {
 nav .user .email {
   font-size: 0.875rem;
   line-height: 24px;
-  color: #0000009A;
+  color: #0000009a;
 }
 
 .all-wrap {
@@ -357,5 +357,122 @@ nav .user .email {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.all-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin-wrapper {
+  padding: 2rem;
+  width: 100%;
+}
+
+.admin-wrapper .admin-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2.75rem;
+}
+
+.admin-wrapper .admin-header .header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-wrapper .admin-header .header-title h1 {
+  font-size: 1.5rem;
+  line-height: 33px;
+  margin-right: 2.875rem;
+}
+
+.admin-wrapper .admin-header .header-title a {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 1000;
+  font-weight: 1000;
+}
+
+.admin-wrapper .admin-header .header-title a i {
+  margin-right: 0.8rem;
+  vertical-align: bottom;
+  color: #2A8356;
+}
+
+.admin-wrapper .admin-header .header-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin-wrapper .admin-header .header-icon a {
+  margin-left: 1.625rem;
+}
+
+.admin-wrapper table {
+  margin-bottom: 2rem;
+}
+
+.admin-wrapper table th {
+  border-top: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid #121212;
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 1000;
+}
+
+.admin-wrapper table tbody {
+  margin-bottom: 4rem;
+}
+
+.admin-wrapper table tbody tr:hover {
+  background: #EDF4EE;
+}
+
+.admin-wrapper table tbody tr td {
+  border-top: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid #cdddcd;
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 1000;
+  font-weight: 600;
+}
+
+.admin-wrapper table .table-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.admin-wrapper table .table-icons a:last-child {
+  margin-left: 1.5rem;
+}
+
+.admin-wrapper .page-link {
+  padding: 5px 0 0 0;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  border: 1px solid #2A8356;
+  color: #121212;
+}
+
+.admin-wrapper .page-link:hover {
+  color: white;
+  background: #2A8356;
 }
 /*# sourceMappingURL=all.css.map */

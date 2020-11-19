@@ -1,55 +1,54 @@
-nav{
-    padding: 2rem 0;
-    max-width: 296px;
-    width: 100%;
-    height: 100vh;
-    background: $primary-color;
+nav {
+  padding: 2rem 0;
+  max-width: 296px;
+  width: 100%;
+  background: $primary-color;
+  display: flex;
+  flex-flow: column;
+  .logo {
+    margin: 0 0 2rem 2rem;
+  }
+  ul {
+    a {
+      font-size: 1rem;
+      line-height: 24px;
+      padding-left: 2rem;
+      margin-bottom: 1.625rem;
+      font-weight: 1000;
+      &:hover {
+        border-left: 4px solid #2a8356;
+        padding-left: 1.75rem;
+        color: #2a8356;
+      }
+      i {
+        position: relative;
+        top: 5px;
+        margin-right: 1rem;
+      }
+    }
+  }
+  .user {
     display: flex;
-    flex-flow: column;
-    .logo{
-        margin: 0 0 2rem 2rem;
+    margin-left: 2rem;
+    margin-top: auto;
+    &-photo {
+      max-width: 40px;
+      max-height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 1rem;
+      position: relative;
+      top: 5px;
     }
-    ul{
-        a{
-            font-size: 1rem;
-            line-height: 24px;
-            padding-left: 2rem;
-            margin-bottom: 1.625rem;
-            font-weight: 1000;
-            &:hover{
-                border-left: 4px solid #2A8356;
-                padding-left: 1.75rem;
-                color: #2A8356;
-            }
-            i{
-                position: relative;
-                top: 5px;
-                margin-right: 1rem;
-            }
-        }
+    .name {
+      font-size: 1rem;
+      line-height: 24px;
+      font-weight: 1000;
     }
-    .user{
-        display: flex;
-        margin-left: 2rem;
-        margin-top: auto;
-        &-photo{
-            max-width:40px;
-            max-height: 40px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 1rem;
-            position: relative;
-            top: 5px;
-        }
-        .name{
-            font-size: 1rem;
-            line-height: 24px;
-            font-weight: 1000;
-        }
-        .email{
-            font-size: 0.875rem;
-            line-height: 24px;
-            color: #0000009A;
-        }
+    .email {
+      font-size: 0.875rem;
+      line-height: 24px;
+      color: #0000009a;
     }
+  }
 }
