@@ -1,0 +1,41 @@
+form {
+  h6 {
+    font-size: 1.25rem;
+    line-height: 33px;
+    margin-bottom: 1rem;
+  }
+  label {
+    margin-bottom: 4px;
+  }
+  input[type="text"] {
+    margin-bottom: 1rem;
+    @include input-width;
+  }
+  .verification {
+    border-bottom: 1px solid #000;
+    p {
+      margin-bottom: 4px;
+      i {
+        color: #e3006e;
+      }
+    }
+    a {
+      padding-top: 13px;
+      margin-bottom: 1rem;
+      @include input-width;
+    }
+  }
+  .access-level {
+    border-bottom: 1px solid #000;
+
+    select {
+      border: 1px solid #000;
+      @include input-width;
+    }
+  }
+  .custom-access {
+    input[type="checkbox"] {
+      margin-bottom: 1rem;
+    }
+  }
+}

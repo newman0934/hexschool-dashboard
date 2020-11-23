@@ -210,7 +210,8 @@
             <div aria-label="Page navigation">
                 <ul class="pagination justify-content-end">
                     <li class="page-item">
-                        <a class="page-link" href="#" tabindex="-1"><i class="material-icons">keyboard_arrow_left</i></a>
+                        <a class="page-link" href="#" tabindex="-1"><i
+                                class="material-icons">keyboard_arrow_left</i></a>
                     </li>
                     <li class="page-item">
                         <a class="page-link" href="#">1</a>
@@ -282,7 +283,45 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form action="">
+                        <div class="account">
+                            <h6>Account</h6>
+                            <label for="name">Name</label>
+                            <input type="text" class="name" id="name">
+                            <label for="email">Email</label>
+                            <input type="text" class="email" id="email">
+                        </div>
+                        <div class="verification">
+                            <h6>Verification</h6>
+                            <p><i class="material-icons">
+                                warning
+                                </i>Unverified</p>
+                            <a href="#" class="btn btn-outline-primary">Send Verification Mail</a>
+                        </div>
+                        <div class="access-level">
+                            <h6>Access Level</h6>
+                            <select name="accessLevel" id="access-level" class="access-level">
+                                <option value="-Choose access level-">-Choose access level-</option>
+                                <option value="level1">level1</option>
+                                <option value="level1">level1</option>
+                                <option value="level1">level1</option>
+                                <option value="level1">level1</option>
+                            </select>
+                        </div>
+                        <div class="custom-access">
+                            <h6>Custom Access</h6>
+                            <input type="checkbox" id="lecture" name="lecture" value="lecture">
+                            <label for="vehicle1">Lecture</label><br>
+                            <input type="checkbox" id="coupon" name="coupon" value="coupon">
+                            <label for="vehicle2">Coupon</label><br>
+                            <input type="checkbox" id="message" name="message" value="message">
+                            <label for="vehicle3">Message</label><br>
+                            <input type="checkbox" id="setting" name="setting" value="setting">
+                            <label for="vehicle3">Setting</label><br>
+                            <input type="checkbox" id="tesk-menu" name="tesk-menu" value="tesk-menu">
+                            <label for="vehicle3">Task Menu</label><br>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

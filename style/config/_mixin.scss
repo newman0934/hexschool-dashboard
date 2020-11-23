@@ -8,3 +8,8 @@
     line-height: $line-height;
     font-weight: 1000;
 }
+
+@mixin input-width{
+    width: 100%;
+    height: 51px;
+}
