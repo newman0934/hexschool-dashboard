@@ -1,0 +1,29 @@
+.adminInfoModal{
+  img{
+    width:141px;
+    height:141px;
+    object-fit: cover;
+  }
+  h5{
+    @include font-lg;
+    font-weight: 1000;
+  }
+  .admin-email{
+    font-size: 0.875rem;
+    line-height: 24px;
+    color: #0000009A;
+    margin-bottom: 1.25rem;
+  }
+  span{
+    font-size: 0.875rem;
+    line-height: 24px;
+    background: $primary-color;
+    padding:0.25rem 0.5rem;
+  }
+  i{
+    color: $green-dark;
+  }
+  .jq-toggle{
+    transform: rotate(-180deg);
+  }
+}

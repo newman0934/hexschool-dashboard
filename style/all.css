@@ -21,6 +21,17 @@
   background: #fff;
 }
 
+.btn-outline-secondary {
+  border: 1px solid #e3006e;
+  color: #e3006e;
+}
+
+.btn-outline-secondary:hover {
+  background: #e3006e;
+  color: #fff;
+  border: 1px solid #e3006e;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
 *, *::before, *::after {
@@ -196,11 +207,11 @@ form input[type="text"]:focus {
 }
 
 form .account {
-  border-bottom: 1px solid #cdddcd;
+  border-bottom: 1px solid #CDDDCD;
 }
 
 form .verification {
-  border-bottom: 1px solid #cdddcd;
+  border-bottom: 1px solid #CDDDCD;
 }
 
 form .verification p {
@@ -234,7 +245,7 @@ form .verification .verified-group {
 }
 
 form .access-level {
-  border-bottom: 1px solid #cdddcd;
+  border-bottom: 1px solid #CDDDCD;
 }
 
 form .access-level select {
@@ -258,7 +269,7 @@ form .custom-access input[type="checkbox"] {
 }
 
 form .deactivate-account {
-  border-top: 1px solid #cdddcd;
+  border-top: 1px solid #CDDDCD;
 }
 
 form .deactivate-account p {
@@ -271,20 +282,49 @@ form .deactivate-account a {
   height: 51px;
   padding-top: 13px;
   margin-bottom: 1rem;
-  border: 1px solid  #e3006e;
-  color: #e3006e;
-}
-
-form .deactivate-account a:hover {
-  background: #e3006e;
-  color: #fff;
-  border: 1px solid #e3006e;
 }
 
 form i {
   color: #e3006e;
   vertical-align: middle;
   margin-right: 0.5rem;
+}
+
+.adminInfoModal img {
+  width: 141px;
+  height: 141px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.adminInfoModal h5 {
+  font-size: 1.5rem;
+  line-height: 36px;
+  font-weight: 1000;
+  font-weight: 1000;
+}
+
+.adminInfoModal .admin-email {
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: #0000009A;
+  margin-bottom: 1.25rem;
+}
+
+.adminInfoModal span {
+  font-size: 0.875rem;
+  line-height: 24px;
+  background: #EDF4EE;
+  padding: 0.25rem 0.5rem;
+}
+
+.adminInfoModal i {
+  color: #2A8356;
+}
+
+.adminInfoModal .jq-toggle {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .modal h5 {
@@ -591,7 +631,7 @@ form i {
 .admin-wrapper table tbody tr td {
   border-top: none;
   padding: 1rem 0;
-  border-bottom: 1px solid #cdddcd;
+  border-bottom: 1px solid #CDDDCD;
   font-size: 1rem;
   line-height: 24px;
   font-weight: 1000;

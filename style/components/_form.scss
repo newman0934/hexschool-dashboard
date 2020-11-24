@@ -17,10 +17,10 @@ form {
     border: none;
   }
   .account {
-    border-bottom: 1px solid #cdddcd;
+    border-bottom: 1px solid $border-color;
   }
   .verification {
-    border-bottom: 1px solid #cdddcd;
+    border-bottom: 1px solid $border-color;
     p {
       margin-bottom: 4px;
     }
@@ -42,7 +42,7 @@ form {
     }
   }
   .access-level {
-    border-bottom: 1px solid #cdddcd;
+    border-bottom: 1px solid $border-color;
     select {
       border: 1px solid #000;
       @include input-width;
@@ -59,26 +59,19 @@ form {
     }
   }
   .deactivate-account{
-    border-top: 1px solid #cdddcd;
+    border-top: 1px solid $border-color;
     p{
-      color: #e3006e;
+      color: $second-color;
       margin-bottom: 1rem;
     }
     a{
       @include input-width;
       padding-top: 13px;
       margin-bottom: 1rem;
-      border: 1px solid  #e3006e;
-      color: #e3006e;
-      &:hover{
-        background: #e3006e;
-        color: #fff;
-        border: 1px solid #e3006e;
-      }
     }
   }
   i {
-    color: #e3006e;
+    color: $second-color;
     vertical-align: middle;
     margin-right: 0.5rem;
   }

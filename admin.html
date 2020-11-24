@@ -201,12 +201,9 @@
                                 </a>
                             </td>
                         </tr>
-
                     </tbody>
                 </table>
-
             </div>
-
             <div aria-label="Page navigation">
                 <ul class="pagination justify-content-end">
                     <li class="page-item">
@@ -230,22 +227,38 @@
         </div>
     </div>
 
-    <div class="modal fade" id="adminInfoModal" tabindex="-1" role="dialog" aria-labelledby="adminInfoModal"
-        aria-hidden="true">
+    <div class="modal fade adminInfoModal" id="adminInfoModal" tabindex="-1" role="dialog"
+        aria-labelledby="adminInfoModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="adminInfoModalTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
                 <div class="modal-body">
-                    ...
+                    <div class="media">
+                        <img class="mr-3" src="https://hexschool.github.io/webLayoutTraining1st/week5/emir.jpeg"
+                            alt="admin photo">
+                        <div class="media-body">
+                            <div class="admin-info-header d-flex justify-content-between">
+                                <p class="admin-number">#1</p>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <ul class="admin-body">
+                                <li>admin</li>
+                                <li>
+                                    <h5>Emir Wicks</h5>
+                                </li>
+                                <li class="admin-email">emir.wicks@mail.com</li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span>verified</span>
+                                    <a href="#"><i class="material-icons admin-info-toggle">keyboard_arrow_down</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">deactivate</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
                 </div>
             </div>
         </div>
@@ -306,7 +319,7 @@
                         <div class="deactivate-account">
                             <h6>Deactivate Account</h6>
                             <p><i class="material-icons">warning</i>This cannot be undone!</p>
-                            <a href="#" class="btn btn-outline-primary">Send Verification Mail</a>
+                            <a href="#" class="btn btn-outline-secondary">Send Verification Mail</a>
                         </div>
                     </form>
                 </div>
@@ -376,8 +389,8 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -385,6 +398,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(".admin-info-toggle").on("click", function () {
+                $(this).toggleClass("jq-toggle")
+                $(".adminInfoModal .modal-footer").slideToggle();
+            })
+        })
+    </script>
 </body>
 
 </html>

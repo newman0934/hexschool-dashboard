@@ -9,6 +9,12 @@
     font-weight: 1000;
 }
 
+@mixin font-lg{
+    font-size: $font-lg;
+    line-height: $line-height-lg;
+    font-weight: 1000;
+}
+
 @mixin input-width{
     width: 100%;
     height: 51px;
