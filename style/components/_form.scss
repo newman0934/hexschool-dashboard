@@ -2,7 +2,7 @@ form {
   h6 {
     font-size: 1.25rem;
     line-height: 33px;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
   label {
     margin-bottom: 4px;
@@ -11,31 +11,75 @@ form {
     margin-bottom: 1rem;
     @include input-width;
   }
+
+  input[type="text"]:focus {
+    background: $primary-color;
+    border: none;
+  }
+  .account {
+    border-bottom: 1px solid #cdddcd;
+  }
   .verification {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #cdddcd;
     p {
       margin-bottom: 4px;
-      i {
-        color: #e3006e;
-      }
     }
     a {
       padding-top: 13px;
       margin-bottom: 1rem;
       @include input-width;
+      &[disabled] {
+        pointer-events: none;
+        color: $border-color;
+        color: $border-color;
+      }
+    }
+    .verified-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
     }
   }
   .access-level {
-    border-bottom: 1px solid #000;
-
+    border-bottom: 1px solid #cdddcd;
     select {
       border: 1px solid #000;
       @include input-width;
+      @include font-md;
+      font-weight: 400;
+      color: #0000009a;
+      padding-left: 1rem;
     }
   }
   .custom-access {
+    margin-bottom: 1rem;
     input[type="checkbox"] {
       margin-bottom: 1rem;
     }
+  }
+  .deactivate-account{
+    border-top: 1px solid #cdddcd;
+    p{
+      color: #e3006e;
+      margin-bottom: 1rem;
+    }
+    a{
+      @include input-width;
+      padding-top: 13px;
+      margin-bottom: 1rem;
+      border: 1px solid  #e3006e;
+      color: #e3006e;
+      &:hover{
+        background: #e3006e;
+        color: #fff;
+        border: 1px solid #e3006e;
+      }
+    }
+  }
+  i {
+    color: #e3006e;
+    vertical-align: middle;
+    margin-right: 0.5rem;
   }
 }

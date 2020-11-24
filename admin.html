@@ -262,11 +262,57 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form action="">
+                        <div class="account">
+                            <h6>Account</h6>
+                            <label for="name">Name</label>
+                            <input type="text" class="name" id="name" value="Emir Wicks">
+                            <label for="email">Email</label>
+                            <input type="text" class="email" id="email" value="emir.wicks@mail.com">
+                        </div>
+                        <div class="verification">
+                            <h6>Verification</h6>
+                            <ul class="verified-group">
+                                <li><i class="material-icons">check_circle</i>Verified</li>
+                                <li>2020/4/12</li>
+                            </ul>
+
+                            <a href="#" class="btn btn-outline-primary" disabled>Send Verification Mail</a>
+                        </div>
+                        <div class="access-level">
+                            <h6>Access Level</h6>
+                            <select name="accessLevel" id="access-level" class="access-level">
+                                <option value="admin">admin</option>
+                                <option value="admin">admin</option>
+                                <option value="admin">admin</option>
+                                <option value="admin">admin</option>
+                                <option value="admin">admin</option>
+                            </select>
+                        </div>
+                        <div class="custom-access">
+                            <h6>Custom Access</h6>
+                            <input type="checkbox" id="lecture" name="lecture" value="lecture">
+                            <label for="lecture">Lecture</label><br>
+                            <input type="checkbox" id="coupon" name="coupon" value="coupon">
+                            <label for="coupon">Coupon</label><br>
+                            <input type="checkbox" id="message" name="message" value="message">
+                            <label for="message">Message</label><br>
+                            <input type="checkbox" id="setting" name="setting" value="setting">
+                            <label for="setting">Setting</label><br>
+                            <input type="checkbox" id="tesk-menu" name="tesk-menu" value="tesk-menu">
+                            <label for="tesk-menu">Task Menu</label><br>
+                        </div>
+
+                        <div class="deactivate-account">
+                            <h6>Deactivate Account</h6>
+                            <p><i class="material-icons">warning</i>This cannot be undone!</p>
+                            <a href="#" class="btn btn-outline-primary">Send Verification Mail</a>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Update</button>
                 </div>
             </div>
         </div>
@@ -294,7 +340,7 @@
                         <div class="verification">
                             <h6>Verification</h6>
                             <p><i class="material-icons">
-                                warning
+                                    warning
                                 </i>Unverified</p>
                             <a href="#" class="btn btn-outline-primary">Send Verification Mail</a>
                         </div>
@@ -311,21 +357,21 @@
                         <div class="custom-access">
                             <h6>Custom Access</h6>
                             <input type="checkbox" id="lecture" name="lecture" value="lecture">
-                            <label for="vehicle1">Lecture</label><br>
+                            <label for="lecture">Lecture</label><br>
                             <input type="checkbox" id="coupon" name="coupon" value="coupon">
-                            <label for="vehicle2">Coupon</label><br>
+                            <label for="coupon">Coupon</label><br>
                             <input type="checkbox" id="message" name="message" value="message">
-                            <label for="vehicle3">Message</label><br>
+                            <label for="message">Message</label><br>
                             <input type="checkbox" id="setting" name="setting" value="setting">
-                            <label for="vehicle3">Setting</label><br>
+                            <label for="setting">Setting</label><br>
                             <input type="checkbox" id="tesk-menu" name="tesk-menu" value="tesk-menu">
-                            <label for="vehicle3">Task Menu</label><br>
+                            <label for="tesk-menu">Task Menu</label><br>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Add</button>
                 </div>
             </div>
         </div>

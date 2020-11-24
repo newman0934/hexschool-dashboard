@@ -3,4 +3,11 @@
         font-size: 1.5rem;
         line-height: 33px;
     }
+    .modal-header{
+        border-bottom: none;
+    }
+
+    .modal-footer{
+        border-top: none;
+    }
 }

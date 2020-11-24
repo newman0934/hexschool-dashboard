@@ -1,3 +1,26 @@
+.btn-outline-primary {
+  border: 1px solid #CDDDCD;
+  color: #2A8356;
+}
+
+.btn-outline-primary:hover {
+  border: 1px solid #2A8356;
+  background: #2A8356;
+  color: #fff;
+}
+
+.btn-primary {
+  border: 1px solid #2A8356;
+  background: #2A8356;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  border: 1px solid #CDDDCD;
+  color: #2A8356;
+  background: #fff;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
 *, *::before, *::after {
@@ -154,7 +177,7 @@ nav .user .email {
 form h6 {
   font-size: 1.25rem;
   line-height: 33px;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 form label {
@@ -167,16 +190,21 @@ form input[type="text"] {
   height: 51px;
 }
 
+form input[type="text"]:focus {
+  background: #EDF4EE;
+  border: none;
+}
+
+form .account {
+  border-bottom: 1px solid #cdddcd;
+}
+
 form .verification {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #cdddcd;
 }
 
 form .verification p {
   margin-bottom: 4px;
-}
-
-form .verification p i {
-  color: #e3006e;
 }
 
 form .verification a {
@@ -186,23 +214,90 @@ form .verification a {
   height: 51px;
 }
 
+form .verification a[disabled] {
+  pointer-events: none;
+  color: #CDDDCD;
+  color: #CDDDCD;
+}
+
+form .verification .verified-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
 form .access-level {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #cdddcd;
 }
 
 form .access-level select {
   border: 1px solid #000;
   width: 100%;
   height: 51px;
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 1000;
+  font-weight: 400;
+  color: #0000009a;
+  padding-left: 1rem;
+}
+
+form .custom-access {
+  margin-bottom: 1rem;
 }
 
 form .custom-access input[type="checkbox"] {
   margin-bottom: 1rem;
 }
 
+form .deactivate-account {
+  border-top: 1px solid #cdddcd;
+}
+
+form .deactivate-account p {
+  color: #e3006e;
+  margin-bottom: 1rem;
+}
+
+form .deactivate-account a {
+  width: 100%;
+  height: 51px;
+  padding-top: 13px;
+  margin-bottom: 1rem;
+  border: 1px solid  #e3006e;
+  color: #e3006e;
+}
+
+form .deactivate-account a:hover {
+  background: #e3006e;
+  color: #fff;
+  border: 1px solid #e3006e;
+}
+
+form i {
+  color: #e3006e;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
 .modal h5 {
   font-size: 1.5rem;
   line-height: 33px;
+}
+
+.modal .modal-header {
+  border-bottom: none;
+}
+
+.modal .modal-footer {
+  border-top: none;
 }
 
 .all-wrap {
