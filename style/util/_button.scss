@@ -31,3 +31,12 @@
     color: #fff;
     border: 1px solid $second-color;
 }
+
+.btn-file{
+    border: 1px solid $border-color;
+    background: $primary-color;
+}
+
+.btn-file:hover{
+    background: $green-dark;
+}
