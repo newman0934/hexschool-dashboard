@@ -32,6 +32,15 @@
   border: 1px solid #e3006e;
 }
 
+.btn-file {
+  border: 1px solid #CDDDCD;
+  background: #EDF4EE;
+}
+
+.btn-file:hover {
+  background: #2A8356;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
 *, *::before, *::after {
@@ -133,6 +142,15 @@ nav {
 
 nav .logo {
   margin: 0 0 2rem 2rem;
+}
+
+nav .logo a {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week5/logo-ANSWER.svg");
+  width: 151px;
+  height: 40px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 nav ul a {
@@ -370,7 +388,7 @@ form i {
           align-items: center;
 }
 
-.assignment-wrapper .assignment-header .header-title h1 {
+.assignment-wrapper .assignment-header .header-title h2 {
   font-size: 1.5rem;
   line-height: 33px;
   margin-right: 2.875rem;
@@ -449,14 +467,15 @@ form i {
 }
 
 .assignment-wrapper .assignment-body .assignment-list .list-group-item .title-and-name .assignment-title {
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: 24px;
+  font-weight: 1000;
 }
 
 .assignment-wrapper .assignment-body .assignment-list .list-group-item .title-and-name .assignment-name {
   font-size: 0.75rem;
   line-height: 24px;
-  color: #0000009A;
+  color: #0000009a;
 }
 
 .assignment-wrapper .assignment-body .comments {
@@ -469,7 +488,11 @@ form i {
   color: #707070;
 }
 
-.assignment-wrapper .assignment-body .comments .card-header {
+.assignment-wrapper .assignment-body .comments .card {
+  margin-bottom: 1rem;
+}
+
+.assignment-wrapper .assignment-body .comments .card .card-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,30 +503,30 @@ form i {
   background: #EDF4EE;
 }
 
-.assignment-wrapper .assignment-body .comments .card-header .chapter {
+.assignment-wrapper .assignment-body .comments .card .card-header .chapter {
   font-size: 0.75rem;
   line-height: 24px;
 }
 
-.assignment-wrapper .assignment-body .comments .card-header .title {
+.assignment-wrapper .assignment-body .comments .card .card-header .title {
   font-size: 1rem;
   line-height: 24px;
   font-weight: 1000;
 }
 
-.assignment-wrapper .assignment-body .comments .card-header i {
+.assignment-wrapper .assignment-body .comments .card .card-header i {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
-.assignment-wrapper .assignment-body .comments .card-body .media {
+.assignment-wrapper .assignment-body .comments .card .card-body .media {
   margin-bottom: 1rem;
   border-bottom: 1px solid #CDDDCD;
 }
 
-.assignment-wrapper .assignment-body .comments .card-body .media img {
+.assignment-wrapper .assignment-body .comments .card .card-body .media img {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -511,7 +534,7 @@ form i {
      object-fit: cover;
 }
 
-.assignment-wrapper .assignment-body .comments .card-body .media .comment-info {
+.assignment-wrapper .assignment-body .comments .card .card-body .media .comment-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,14 +543,53 @@ form i {
           justify-content: space-between;
 }
 
-.assignment-wrapper .assignment-body .comments .card-body .media .comment-info .favorite-and-edit {
+.assignment-wrapper .assignment-body .comments .card .card-body .media .comment-info h5 {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 1000;
+}
+
+.assignment-wrapper .assignment-body .comments .card .card-body .media .comment-info p {
+  font-size: 0.75rem;
+  line-height: 24px;
+  color: #0000009A;
+  margin-bottom: 1rem;
+}
+
+.assignment-wrapper .assignment-body .comments .card .card-body .media .comment-info .favorite-and-edit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.assignment-wrapper .assignment-body .comments .card-body .media .comment-info .favorite-and-edit a {
+.assignment-wrapper .assignment-body .comments .card .card-body .media .comment-info .favorite-and-edit a {
   margin-left: 1.5rem;
+}
+
+.assignment-wrapper .assignment-body .comments .card .card-body .media p {
+  font-size: 0.875rem;
+  line-height: 21px;
+  margin-bottom: 1rem;
+}
+
+.assignment-wrapper .assignment-body .comments .card .card-body .media a {
+  margin-bottom: 1rem;
+}
+
+.assignment-wrapper .assignment-body .comments .card .card-body .media ul {
+  list-style-type: disc;
+  font-size: 0.875px;
+  line-height: 21px;
+  padding-left: 2rem;
+}
+
+.assignment-wrapper .assignment-body .comments .card .card-body .media .high-light {
+  color: #2A8356;
+  background: #EDF4EE;
+}
+
+.assignment-wrapper .assignment-body .comments .card .card-body .media:last-child {
+  border-bottom: none;
 }
 
 .assignment-wrapper .assignment-body .comments .switch-and-button {
@@ -578,7 +640,7 @@ form i {
           align-items: center;
 }
 
-.admin-wrapper .admin-header .header-title h1 {
+.admin-wrapper .admin-header .header-title h2 {
   font-size: 1.5rem;
   line-height: 33px;
   margin-right: 2.875rem;

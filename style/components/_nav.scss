@@ -7,6 +7,14 @@ nav {
   flex-flow: column;
   .logo {
     margin: 0 0 2rem 2rem;
+    a{
+      background:url("https://hexschool.github.io/webLayoutTraining1st/week5/logo-ANSWER.svg");
+      width: 151px;
+      height: 40px;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
   }
   ul {
     a {

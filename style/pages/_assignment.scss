@@ -12,7 +12,7 @@
     .header-title {
       display: flex;
       align-items: center;
-      h1 {
+      h2 {
         font-size: 1.5rem;
         line-height: 33px;
         margin-right: 2.875rem;
@@ -36,88 +36,119 @@
     justify-content: space-between;
     .assignment-list {
       width: 34.78%;
-      select{
+      select {
         margin-bottom: 2px;
       }
-      .list-group-item{
-        padding:0.75rem;
-        border:1px solid $border-color;
-        &:hover{
+      .list-group-item {
+        padding: 0.75rem;
+        border: 1px solid $border-color;
+        &:hover {
           background: $primary-color;
         }
-        .chapter-and-create-time{
+        .chapter-and-create-time {
           display: flex;
           justify-content: space-between;
-          .assignment-chapter{
+          .assignment-chapter {
             @include font-sm;
           }
-          .assignment-create-time{
+          .assignment-create-time {
             @include font-sm;
           }
         }
-        .title-and-name{
+        .title-and-name {
           display: flex;
           justify-content: space-between;
-          .assignment-title{
-            @include font-sm;
+          .assignment-title {
+            @include font-md;
           }
-          .assignment-name{
+          .assignment-name {
             @include font-sm;
-            color: #0000009A;
+            color: #0000009a;
           }
         }
-
       }
     }
     .comments {
       width: 63.47%;
-      .comment-total{
+      .comment-total {
         @include font-sm;
         color: #707070;
       }
-      .card-header {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.75rem 1rem;
-        background: $primary-color;
-        .chapter{
-          @include font-sm;
-        }
-        .title{
-          @include font-md;
-        }
-        i{
-          position: relative;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-      }
-      .card-body {
-        .media {
-          margin-bottom: 1rem;
-          border-bottom: 1px solid $border-color;
-          img {
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: 50%;
-            object-fit: cover;
+      .card{
+        margin-bottom: 1rem;
+        .card-header {
+          display: flex;
+          justify-content: space-between;
+          padding: 0.75rem 1rem;
+          background: $primary-color;
+          .chapter {
+            @include font-sm;
           }
-          .comment-info{
-            display: flex;
-            justify-content: space-between;
-            .favorite-and-edit{
+          .title {
+            @include font-md;
+          }
+          i {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        .card-body {
+          .media {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid $border-color;
+            img {
+              width: 2.5rem;
+              height: 2.5rem;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+            .comment-info {
               display: flex;
-              a{
-                margin-left: 1.5rem;
+              justify-content: space-between;
+              h5{
+                @include font-md;
+              }
+              p{
+                @include font-sm;
+                color: #0000009A;
+                margin-bottom: 1rem;
+              }
+              .favorite-and-edit {
+                display: flex;
+                a {
+                  margin-left: 1.5rem;
+                }
               }
             }
+            p{
+              font-size: 0.875rem;
+              line-height: 21px;
+              margin-bottom: 1rem;
+            }
+            a{
+              margin-bottom: 1rem;
+            }
+            ul{
+              list-style-type: disc;
+              font-size: 0.875px;
+              line-height: 21px;
+              padding-left:2rem;
+            }
+            .high-light{
+              color: $green-dark;
+              background: $primary-color;
+            }
+          }
+          .media:last-child{
+            border-bottom: none;
           }
         }
       }
-      .switch-and-button{
+      .switch-and-button {
         display: flex;
         justify-content: space-between;
-        .switch{
+        .switch {
           display: flex;
           align-items: center;
         }
